@@ -12,20 +12,16 @@ Ann Rose Bright, Yana Kotlyarenko, Florian Neuhaus, Diana Rodrigues, Chao Feng, 
 ## Data
 
 #### scRNA-seq
-GEO accession number GSE255455
-Link:https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255455
+GEO accession number GSE255455: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255455
 
 #### scATAC-seq
-GEO accession number GSE255104
-Link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255104
+GEO accession number GSE255104: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255104
 
 #### TotalRNA-seq
-GEO accession number GSE255103
-link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255103
+GEO accession number GSE255103: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255103
 
 #### CUT&RUN:
-GEO accession number GSE255103
-link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255103
+GEO accession number GSE255103: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255103
 
 ## Scripts
 

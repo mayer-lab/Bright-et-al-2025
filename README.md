@@ -1,6 +1,6 @@
 # Bright-et-al-2025
 
-This repository contains the code associated with the study "Temporal Control of Maturation Competence in GABAergic Neurogenesis".
+This repository contains the code associated with the study "Temporal control of progenitor competence shapes maturation in GABAergic neuron development in mice".
 
 
 ## Authors

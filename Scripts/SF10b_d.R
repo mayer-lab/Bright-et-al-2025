@@ -76,28 +76,3 @@ ggplot(num_genes_per_TF_df, aes(number_of_genes)) +
         panel.background = element_blank(),
         strip.text = element_text(size=14))
 
-
-## SF 11c: pct stage-enriched regions contained in network
-promoter_sub <- readRDS("Processed_Objects/cutnrun_promoter_ranges.rds")
-
-Nfib_eRegulon_sub <- eRegulon_md[eRegulon_md$TF == "Nfib", ]
-nfib_target_peaks <- unique(Nfib_eRegulon_sub$Region)
-
-nfib_target_gr <- GRanges(
-  seqnames = sapply(nfib_target_peaks, function(el) {strsplit(el,":")[[1]][1]}),
-  ranges = IRanges(
-    start = as.numeric(sapply(nfib_target_peaks, function(el) {strsplit(el,"[:-]")[[1]][2]})),
-    end = as.numeric(sapply(nfib_target_peaks, function(el) {strsplit(el,"[:-]")[[1]][3]})),
-    names = nfib_target_peaks
-  ),
-  gene = sapply(nfib_target_peaks, function(el) {paste(Nfib_eRegulon_sub$Gene[Nfib_eRegulon_sub$Region == el], collapse = ",")})
-)
-
-nfib_target_gr <- annotatePeak(nfib_target_gr, tssRegion = c(-3000,3000),
-                               TxDb = edb)
-plotAnnoPie(nfib_target_gr)
-nfib_promoter_target_gr <- nfib_target_gr@anno[nfib_target_gr@anno$annotation == "Promoter (<=1kb)"]
-
-nfib_target_sub_gr <- subsetByOverlaps(nfib_promoter_target_gr, promoter_sub, maxgap = 100)
-print(length(nfib_promoter_target_gr))
-print(length(nfib_target_sub_gr))

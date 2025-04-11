@@ -8,11 +8,7 @@ library(ggplot2)
 # Figure number: 2f
 # Figure description: scATAC-seq UMAP based on stage.
 
-# archr_rds <- readRDS("/data/mayerlab/neuhaus/dorsal_ventral_comp/cfse_network/results/archr_proj_fAnn_wLabelTransfer/Save-ArchR-Project.rds")
-# archr_rds@projectMetadata$GroupCoverages@listData <- list()
-# saveRDS(archr_rds, "/data/mayerlab/neuhaus/dorsal_ventral_comp/cfse_network/results/archr_proj_fAnn_wLabelTransfer/Save-ArchR-Project.rds")
-
-ArchRProject <- loadArchRProject("/data/mayerlab/neuhaus/dorsal_ventral_comp/cfse_network/results/archr_proj_fAnn_wLabelTransfer/", force = T)
+ArchRProject <- loadArchRProject("/path/to/archr_proj/", force = T)
 
 
 # Plotting figure

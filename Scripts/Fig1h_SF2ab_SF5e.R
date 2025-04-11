@@ -8,6 +8,7 @@ library(ggalluvial)
 ## load data:
 EXCIT_INHIBIT_cleaned_sub <- readRDS(file = "Processed_Objects/EXCIT_INHIBIT_cleaned_sub.rds")
 
+## cell type abundances across ventral/ dorsal along stages:
 plot_df <- EXCIT_INHIBIT_cleaned_sub@meta.data[,c("Celltype2","Gene_Annotation","General2","Stage_DV1")]
 
 ## 1: ventral telencephalon:
@@ -106,6 +107,7 @@ load("Processed_Objects//transcriptome.integrated.TIS2.Rdata")
 P10 <- transcriptome.integrated
 remove(transcriptome.integrated)
 
+## select inhibitory cell types:
 selection.P10 <- c("2-Inhib Neuron OB Meis2", "6-Inhib Neuron OB Synpr","7a-D2 SPNs",
                    "7b-D1 SPNs","8-Inhib ITC Amygdala",
                    "34-Inhib PN Ventral Striatum/Eac","13a-MGE IN Snhg11",

@@ -2,6 +2,7 @@ library(Seurat)
 library(dplyr)
 library(ggplot2)
 
+## CFSE Transcriptome: UMAP visulaization and cell state abundance ##
 
 ## load data and subset:
 load("Processed_Objects/Inhibitory_datasets.Rdata")

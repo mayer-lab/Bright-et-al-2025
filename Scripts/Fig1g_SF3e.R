@@ -7,6 +7,7 @@ source("Scripts/lib.R")
 ## load excitatory inhibitory data:
 load("Processed_Objects/EXCIT_INHIBIT_cleaned.Rdata")
 EXCIT_INHIBIT_cleaned <- SetIdent(EXCIT_INHIBIT_cleaned, value = "Annotated2")
+## subset clusters containing apical progenitors:
 AP_DV <- subset(EXCIT_INHIBIT_cleaned, ident = c("Apical_progenitors"))
 
 AP_DV <- SetIdent(AP_DV, value = "Stage_DV2")
@@ -22,6 +23,7 @@ g2m_genes <- convert_to_mouse(cc.genes$g2m.genes)
 
 table(AP_DV_same_stages@meta.data$Stage_DV2)
 
+## re-do scaling:
 AP_DV_same_stages[["percent.mt"]] <- PercentageFeatureSet(AP_DV_same_stages, pattern = "^mt-")
 AP_DV_same_stages <- NormalizeData(AP_DV_same_stages)
 AP_DV_same_stages <- FindVariableFeatures(AP_DV_same_stages)

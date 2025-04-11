@@ -1,6 +1,6 @@
 # Bright-et-al-2025
 
-This repository contains the code associated with the study "Temporal Control of Maturation Competence in GABAergic Neurogenesis".
+This repository contains the code associated with the study "Temporal control of progenitor competence shapes maturation in GABAergic neuron development in mice".
 
 
 ## Authors
@@ -12,20 +12,16 @@ Ann Rose Bright, Yana Kotlyarenko, Florian Neuhaus, Diana Rodrigues, Chao Feng, 
 ## Data
 
 #### scRNA-seq
-GEO accession number GSE255455
-Link:https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255455
+GEO accession number GSE255455: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255455
 
 #### scATAC-seq
-GEO accession number GSE255104
-Link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255104
+GEO accession number GSE255104: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255104
 
 #### TotalRNA-seq
-GEO accession number GSE255103
-link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255103
+GEO accession number GSE255103: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255103
 
 #### CUT&RUN:
-GEO accession number GSE255103
-link: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255103
+GEO accession number GSE255103: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255103
 
 ## Scripts
 
